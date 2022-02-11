@@ -15,11 +15,11 @@
         </tr>
         <tr>
           <td>Temp feels like</td>
-          <td>17.09 °C</td>
+          <td>21.42 °C</td>
         </tr>
          <tr>
           <td>Pressure </td>
-          <td>1014 hPa</td>
+          <td>1013 hPa</td>
         </tr>
          <tr>
           <td>Longitude</td>
@@ -30,8 +30,8 @@
           <td>16.7735</td>
         </tr>
         <tr>
-          <td>date time</td>
-          <td>2022-02-10 22:29:44.242046</td>
+          <td>last update</td>
+          <td>2022-02-11 15:56:53.369001</td>
         </tr>
       </table> 
     </div>
