@@ -47,7 +47,7 @@ def createReadMe(location):
     </div>
   </div> 
 
-  ### for more info about this project check [`info.md`](/blob/main/info.md)
+  ### for more info about this project check [`info.md`](/info.md)
   """
   with open('README.md','w') as f:
     f.write(content)
