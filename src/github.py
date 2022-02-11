@@ -4,7 +4,7 @@ from os.path import join, dirname
 from dotenv import load_dotenv
 import json
 import base64
-from datetime import date
+from datetime import datetime
 
 class git():
   def __init__(self) -> None:
@@ -47,7 +47,7 @@ class git():
     base64content=base64.b64encode(open(filename,"rb").read())
 
     if base64content.decode('utf-8')+"\n" != data['content']:
-      message = json.dumps({"message":f"update {date.today()}",
+      message = json.dumps({"message":f"update {datetime.now()}",
                           "branch": branch,
                           "content": base64content.decode("utf-8") ,
                           "sha": data['sha']

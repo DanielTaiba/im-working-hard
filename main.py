@@ -1,6 +1,7 @@
 from src import weatherApi,git
+import datetime
 
-def createReadMe(location, num_day):
+def createReadMe(location):
   data = weatherApi().currentWeather_byCityName(city_name=location)
   content = f""" 
   # Did you know that... 
@@ -33,6 +34,10 @@ def createReadMe(location, num_day):
           <td>Latitude</td>
           <td>{data['coord']['lat']}</td>
         </tr>
+        <tr>
+          <td>last update</td>
+          <td>{datetime.datetime.now()}</td>
+        </tr>
       </table> 
     </div>
     <div class="column"style = "flex:50%">
@@ -42,7 +47,7 @@ def createReadMe(location, num_day):
     </div>
   </div> 
 
-  ### for more info about this project check [`info.md`](#info.md)
+  ### for more info about this project check [`info.md`](/blob/main/info.md)
   """
   with open('README.md','w') as f:
     f.write(content)
@@ -50,5 +55,5 @@ def createReadMe(location, num_day):
 
 if __name__ == '__main__':
   
-  createReadMe('Timbuktu',3)
-  #git().pushToGithub(filename='README.md',repo='Im-working-hard',branch='main')
+  createReadMe('Timbuktu')
+  git().pushToGithub(filename='README.md',repo='Im-working-hard',branch='main')
