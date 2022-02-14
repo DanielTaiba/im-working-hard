@@ -11,15 +11,15 @@
         </tr>
         <tr>
           <td>Weather</td>
-          <td>scattered clouds</td>
+          <td>few clouds</td>
         </tr>
         <tr>
           <td>Temp feels like</td>
-          <td>20.45 °C</td>
+          <td>17.96 °C</td>
         </tr>
          <tr>
           <td>Pressure </td>
-          <td>1014 hPa</td>
+          <td>1016 hPa</td>
         </tr>
          <tr>
           <td>Longitude</td>
@@ -31,7 +31,7 @@
         </tr>
         <tr>
           <td>last update</td>
-          <td>2022-02-13 16:37:36.447596</td>
+          <td>2022-02-14 19:02:29.362290</td>
         </tr>
       </table> 
     </div>
