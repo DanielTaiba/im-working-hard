@@ -11,11 +11,11 @@
         </tr>
         <tr>
           <td>Weather</td>
-          <td>few clouds</td>
+          <td>overcast clouds</td>
         </tr>
         <tr>
           <td>Temp feels like</td>
-          <td>17.96 °C</td>
+          <td>18.16 °C</td>
         </tr>
          <tr>
           <td>Pressure </td>
@@ -31,7 +31,7 @@
         </tr>
         <tr>
           <td>last update</td>
-          <td>2022-02-14 19:02:29.362290</td>
+          <td>2022-02-15 19:37:51.920435</td>
         </tr>
       </table> 
     </div>
