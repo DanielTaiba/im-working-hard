@@ -1,6 +1,11 @@
- 
+import datetime
+from .openWeather import weatherApi
+
+def createReadMe(location):
+  data = weatherApi().currentWeather_byCityName(city_name=location)
+  content = f""" 
   # Did you know that... 
-  ## Today the weather in Timbuktu is:
+  ## Today the weather in {location} is:
 
    <div class="row" style = "display:flex">
     <div class="column" style = "flex:50%">
@@ -11,36 +16,39 @@
         </tr>
         <tr>
           <td>Weather</td>
-          <td>scattered clouds</td>
+          <td>{data['weather'][0]['description']}</td>
         </tr>
         <tr>
           <td>Temp feels like</td>
-          <td>19.36 °C</td>
+          <td>{round(data['main']['feels_like']-273.15,2)} °C</td>
         </tr>
          <tr>
           <td>Pressure </td>
-          <td>1011 hPa</td>
+          <td>{data['main']['pressure']} hPa</td>
         </tr>
          <tr>
           <td>Longitude</td>
-          <td>-3.0074</td>
+          <td>{data['coord']['lon']}</td>
         </tr>
          <tr>
           <td>Latitude</td>
-          <td>16.7735</td>
+          <td>{data['coord']['lat']}</td>
         </tr>
         <tr>
           <td>last update</td>
-          <td>2022-03-04 23:08:44.137565</td>
+          <td>{datetime.datetime.now()}</td>
         </tr>
       </table> 
     </div>
     <div class="column"style = "flex:50%">
-      <img src="Timbuktu.png"
-        alt="Map Timbuktu"
+      <img src="{location}.png"
+        alt="Map {location}"
         style="float: left; margin-right: 10px;" />
     </div>
   </div> 
 
   ### for more info about this project check [`info.md`](/info.md)
+  """
+  with open('README.md','w') as f:
+    f.write(content)
   

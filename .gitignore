@@ -3,3 +3,4 @@ env/
 responsesJson/
 test.py
 __pycache__
+airflow/
