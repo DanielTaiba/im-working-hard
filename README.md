@@ -11,15 +11,15 @@
         </tr>
         <tr>
           <td>Weather</td>
-          <td>broken clouds</td>
+          <td>clear sky</td>
         </tr>
         <tr>
           <td>Temp feels like</td>
-          <td>21.23 °C</td>
+          <td>24.76 °C</td>
         </tr>
          <tr>
           <td>Pressure </td>
-          <td>1011 hPa</td>
+          <td>1009 hPa</td>
         </tr>
          <tr>
           <td>Longitude</td>
@@ -31,7 +31,7 @@
         </tr>
         <tr>
           <td>last update</td>
-          <td>2022-03-09 20:59:03.771029</td>
+          <td>2022-03-13 21:43:43.892755</td>
         </tr>
       </table> 
     </div>
